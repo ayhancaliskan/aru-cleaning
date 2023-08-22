@@ -30,12 +30,16 @@
      01.COMMON css 
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700|Lato:300,400,700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Lato", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #6A6972;
-  overflow-x: hidden; }
+  overflow-x: hidden; 
+}
 
 * {
   margin: 0;
@@ -135,7 +139,7 @@ p {
   -ms-user-select: none;
   user-select: none;
   padding: 0 25px;
-  font-size: 16px;
+  font-size: 19px;
   line-height: 48px;
   border-radius: 8px;
   border: 0;
@@ -147,9 +151,10 @@ p {
   -ms-transition: all 0.4s ease-out 0s;
   -o-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
-  background: -webkit-linear-gradient(left, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
-  background: -o-linear-gradient(left, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
-  background: linear-gradient(to right, #33c8c1 0%, #119bd2 50%, #33c8c1 100%);
+  background: -webkit-linear-gradient(left, #000000 0%, #3c3c3a  50%, #000000 100%);
+  background: -o-linear-gradient(left, #000000 0%, #3c3c3a 50%, #000000 100%);
+  background: linear-gradient(to right, #000000 0%, #3c3c3a 50%, #000000 100%);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-size: 200%; }
   .main-btn:hover {
     color: #fff;
@@ -157,9 +162,9 @@ p {
 
 /*===== All SECTION TITLE Style =====*/
 .section-title .line {
-  background: -webkit-linear-gradient(#fe8464 0%, #fe6e9a 100%);
-  background: -o-linear-gradient(#fe8464 0%, #fe6e9a 100%);
-  background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+  background: -webkit-linear-gradient(#1E4E56 0%, #9cacb4 100%);
+  background: -o-linear-gradient(#1E4E56 0%, #9cacb4 100%);
+  background: linear-gradient(#1E4E56 0%, #9cacb4 100%);
   width: 150px;
   height: 5px;
   margin-bottom: 10px !important; }
@@ -754,9 +759,12 @@ p {
   color: #2E2E2E; }
 
 .sticky .navbar-nav .nav-item.active > a, .sticky .navbar-nav .nav-item:hover > a {
-  color: #361CC1; }
+  color: #398d9c; }
 
 /*===== HEADER HERO =====*/
+.header-area {
+  height: 90vh;
+}
 .header-hero {
   position: relative;
   z-index: 5;
@@ -774,7 +782,7 @@ p {
   padding-top: 180px; }
   @media (max-width: 767px) {
     .header-hero-content {
-      padding-top: 100px; } }
+      padding-top: 195px; } }
   .header-hero-content .header-sub-title {
     font-size: 38px;
     font-weight: 300;
@@ -797,7 +805,9 @@ p {
         font-size: 30px; } }
   .header-hero-content .text {
     color: #fff;
-    margin-top: 30px; }
+    margin-top: 30px;
+    font-size: 19px;
+  }
   .header-hero-content .main-btn {
     margin-top: 40px; }
 
@@ -1358,9 +1368,9 @@ p {
     border-bottom-right-radius: 5px;
     height: 65px;
     line-height: 65px;
-    background: -webkit-linear-gradient(left, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
-    background: -o-linear-gradient(left, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
-    background: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+    background: -webkit-linear-gradient(left, #000000 0%, #3c3c3a  50%, #000000 100%);
+    background: -o-linear-gradient(left, #000000 0%, #3c3c3a 50%, #000000 100%);
+    background: linear-gradient(to right, #000000 0%, #3c3c3a 50%, #000000 100%);
     background-size: 200%; }
     @media (max-width: 767px) {
       .subscribe-form button {
