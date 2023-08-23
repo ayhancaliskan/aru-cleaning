@@ -276,7 +276,7 @@ p {
       height: 100%;
       border-style: solid;
       /* Spinner Color */
-      border-color: #361CC1 #361CC1 #E1E1E1;
+      border-color: #9cacb4 #9cacb4 #E1E1E1;
       border-radius: 50%;
       border-width: 6px; }
     .preloader .loader .ytp-spinner-left .ytp-spinner-circle {
@@ -940,7 +940,7 @@ p {
     .single-services .services-content .more:hover {
       color: #361CC1; }
   .single-services:hover {
-    border-color: #FE7A7B; }
+    border-color: #398d9c; }
     .single-services:hover .services-icon .shape {
       -webkit-transform: rotate(25deg);
       -moz-transform: rotate(25deg);
@@ -1163,9 +1163,9 @@ p {
           z-index: -1;
           top: 0;
           left: 0;
-          background: -webkit-linear-gradient(#fe8464 0%, #fe6e9a 100%);
-          background: -o-linear-gradient(#fe8464 0%, #fe6e9a 100%);
-          background: linear-gradient(#fe8464 0%, #fe6e9a 100%);
+          background: -webkit-linear-gradient(#1E4E56 0%, #9cacb4 100%);
+          background: -o-linear-gradient(#1E4E56 0%, #9cacb4 100%);
+          background: linear-gradient(#1E4E56 0%, #9cacb4 100%);
           opacity: 0;
           visibility: hidden;
           -webkit-transition: all 0.3s ease-out 0s;
@@ -1243,25 +1243,25 @@ p {
     .single-testimonial .testimonial-author .author-content .text {
       font-size: 15px; }
   .single-testimonial:hover {
-    border-color: #FE7A7B; }
+    border-color: #398d9c; }
     .single-testimonial:hover .testimonial-review .quota i {
-      color: #FE7A7B; }
+      color: #398d9c; }
 
-.slick-center .single-testimonial {
-  border-color: #FE7A7B; }
-  .slick-center .single-testimonial .testimonial-review .quota i {
-    color: #FE7A7B; }
+.slick-center .single-card {
+  border-color: #398d9c; }
+  .slick-center .single-card .testimonial-review .quota i {
+    color: #398d9c; }
 
-.testimonial-active .slick-dots {
+.slick-dots {
   margin: 0 auto; }
-  .testimonial-active .slick-dots li {
+  .slick-dots li {
     display: inline-block;
     margin: 0 4px; }
-    .testimonial-active .slick-dots li button {
+    .slick-dots li button {
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: linear-gradient(180deg, #fe8464 0%, #fe6e9a 100%);
+      background: linear-gradient(180deg, #9cacb4 0%, #9cacb4 100%);
       border: 0;
       font-size: 0;
       opacity: 0.5;
@@ -1270,7 +1270,7 @@ p {
       -ms-transition: all 0.3s ease-out 0s;
       -o-transition: all 0.3s ease-out 0s;
       transition: all 0.3s ease-out 0s; }
-    .testimonial-active .slick-dots li.slick-active button {
+    .slick-dots li.slick-active button {
       opacity: 1;
       width: 15px;
       height: 15px; }
