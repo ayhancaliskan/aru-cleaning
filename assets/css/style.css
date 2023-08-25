@@ -1028,8 +1028,10 @@ p {
     .video-wrapper {
       margin-right: 0; } }
   .video-wrapper .video-image img {
+    border-radius: 20px;
     width: 100%; }
   .video-wrapper .video-icon {
+    border-radius: 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -1431,7 +1433,9 @@ p {
 
 .footer-widget {
   padding-top: 50px; }
-
+.footer-about{
+  display: flex;
+}
 .footer-about .logo img {
   width: 160px; }
 
@@ -1441,10 +1445,16 @@ p {
   margin-top: 30px; }
 
 .footer-about .social {
-  margin-top: 40px; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 18px;
+}
   .footer-about .social li {
     display: inline-block;
-    margin-right: 30px; }
+    margin: 6px 0;
+  }
     .footer-about .social li a {
       font-size: 22px;
       color: #fff;
