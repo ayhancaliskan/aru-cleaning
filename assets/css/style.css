@@ -1332,7 +1332,9 @@ p {
   background-color: #fff; }
   @media (max-width: 767px) {
     .subscribe-area {
-      padding: 10px 30px 60px; } }
+      padding: 40px 15px !important; } 
+    
+    }
 
 .subscribe-content .subscribe-title {
   font-size: 35px;
@@ -1400,6 +1402,61 @@ p {
       color: #fff;
       background-position: right center; }
 
+.subscribe-area .form-contact input,
+.subscribe-area .form-contact textarea {
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border-color: #D8D8D8;
+  outline: none;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+  letter-spacing: 0.23px;
+}
+.subscribe-area .form-contact input{
+  height: 50px;
+}
+.subscribe-area .form-contact label {
+  position: absolute;
+  transform: translateY(-50%);
+  color: white;
+  text-transform: capitalize;
+  font-size: 15px;
+  transition: top 0.2s, font-size 0.3s, background-color 0.3s;
+  padding: 15px 20px;
+  pointer-events: none;
+  color: black;
+}
+.subscribe-area .form-contact input + label {
+  top: 50%;
+}
+.subscribe-area .form-contact textarea + label {
+  top: 25px;
+}
+.subscribe-area .form-contact input:focus,
+.subscribe-area .form-contact input:not(:placeholder-shown),
+.subscribe-area .form-contact textarea:focus,
+.subscribe-area .form-contact textarea:not(:placeholder-shown) {
+    border-color: #398D9C;
+    outline: 0;
+    color: black;
+    box-shadow: none;
+}
+.subscribe-area .form-contact input:focus ~ label,
+.subscribe-area .form-contact input:not(:placeholder-shown) ~ label,
+.subscribe-area .form-contact textarea:not(:placeholder-shown) + label,
+.subscribe-area .form-contact textarea:focus + label {
+    top: 14px;
+    font-size: 14px;
+    opacity: .65;
+    color: #398D9C;
+}
+.subscribe-area .form-contact input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
 /*===========================
        11.FOOTER  css 
 ===========================*/
