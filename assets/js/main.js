@@ -160,7 +160,42 @@ $(function () {
         ]
     });
 
+    //===== submit form 
+    $("form").submit(function(e){
+        e.preventDefault();
+        const action = $(this).attr("action");
+        let alertWarningMessage = $('.alert-warning.form-message')
+        let alertSuccessMessage = $('.alert-success.form-message')
+        $.ajax({
+            type: "POST",
+            url: action,
+            crossDomain: true,
+            data: new FormData(this),
+            dataType: "json",
+            processData: false,
+            contentType: false,
+            headers: {
+            "Accept": "application/json"
+            }
+        }).done(function(res) {
+            if (res.success) {
+                alertWarningMessage.addClass('d-none');
 
+                alertSuccessMessage.removeClass('d-none');
+                alertSuccessMessage.html("Binnenkort neemt een expert contact met u op. <br/> Voor spoedvragen kunt u ons bereiken op +32 (0) 488 22 37 45. <br/> We horen graag van u!");
+            } else {
+                alertSuccessMessage.addClass('d-none');
+
+                alertWarningMessage.removeClass('d-none');
+                alertWarningMessage.text("Er is een klein probleem opgetreden. Probeer het later opnieuw.");
+            }
+        }).fail(function() {
+            alertSuccessMessage.addClass('d-none');
+
+            alertWarningMessage.removeClass('d-none')
+            alertWarningMessage.text("Er is een klein probleem opgetreden. Probeer het later opnieuw.");
+        });
+    });
     //===== Back to top
 
     // Show or hide the sticky footer button
