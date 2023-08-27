@@ -1340,7 +1340,7 @@ p {
       padding: 30px 25px 70px;
     }
     .subscribe-form-custom {
-      padding: 40px 15px git!important;
+      padding: 40px 15px !important;
     }
   }
 
